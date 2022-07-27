@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Berlin Apartment",
+    "rooms": 2,
+    "slug": "berlin-apartment"
+  },
+  {
+    "id": 2,
+    "name": "Helsinki Apartment",
+    "rooms": 3,
+    "slug": "helsinki-apartment"
+  }
+]

@@ -12,8 +12,9 @@ export default withTRPC<AppRouter>({
      * If you want to use SSR, you need to use the server's full URL
      * @link https://trpc.io/docs/ssr
      */
-    const url = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}/api/trpc`
+    // TODO: Change this
+    const url = process.env.EDUCATIVE
+      ? `{{EDUCATIVE_LIVE_VM_URL}}/api/trpc`
       : "http://localhost:3000/api/trpc";
 
     return {

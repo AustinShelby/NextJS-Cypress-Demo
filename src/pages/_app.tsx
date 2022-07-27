@@ -7,22 +7,9 @@ const App: AppType = ({ Component, pageProps }) => {
 };
 
 export default withTRPC<AppRouter>({
-  config({ ctx }) {
-    /**
-     * If you want to use SSR, you need to use the server's full URL
-     * @link https://trpc.io/docs/ssr
-     */
-    // TODO: Change this
-    const url = process.env.EDUCATIVE
-      ? `{{EDUCATIVE_LIVE_VM_URL}}/api/trpc`
-      : "http://localhost:3000/api/trpc";
-
+  config() {
     return {
-      url,
-      /**
-       * @link https://react-query.tanstack.com/reference/QueryClient
-       */
-      // queryClientConfig: { defaultOptions: { queries: { staleTime: 60 } } },
+      url: "/api/trpc",
     };
   },
 })(App);
